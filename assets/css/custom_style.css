@@ -1,0 +1,218 @@
+/* Custom CSS for EDA Dashboard */
+
+/* Main container styling */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Sidebar styling */
+.sidebar .sidebar-content {
+    background-color: #1E1E1E;
+    border-right: 1px solid #333;
+}
+
+/* Button styling */
+.stButton > button {
+    background-color: #FF6B6B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: #FF5252;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 107, 107, 0.3);
+}
+
+/* Download button styling */
+.download-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* Card styling for insights */
+.insight-card {
+    background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 4px solid #FF6B6B;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Metric styling */
+.metric-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    color: white;
+}
+
+/* Plot container styling */
+.plot-container {
+    background-color: #262730;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #333;
+}
+
+/* Success message styling */
+.success-msg {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border-left: 4px solid #45a049;
+}
+
+/* Warning message styling */
+.warning-msg {
+    background-color: #FF9800;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border-left: 4px solid #F57C00;
+}
+
+/* Error message styling */
+.error-msg {
+    background-color: #F44336;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border-left: 4px solid #D32F2F;
+}
+
+/* File uploader styling */
+.stFileUploader > div > div {
+    background-color: #262730;
+    border: 2px dashed #FF6B6B;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+/* Selectbox styling */
+.stSelectbox > div > div {
+    background-color: #262730;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+/* Dataframe styling */
+.dataframe {
+    background-color: #262730;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1E1E1E;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF6B6B;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FF5252;
+}
+
+/* Enhanced visualization styling */
+.plot-container {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 1rem 0;
+    border: 1px solid #333;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.plot-info {
+    background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 4px solid #FF6B6B;
+}
+
+/* Enhanced button styling for plot generation */
+.stButton > button[data-testid="baseButton-primary"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.stButton > button[data-testid="baseButton-primary"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
+/* Enhanced selectbox styling */
+.stSelectbox > div > div {
+    background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+    border: 2px solid #FF6B6B;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.stSelectbox > div > div:hover {
+    border-color: #FF5252;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+/* Enhanced metric styling */
+.metric-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced download button styling */
+.download-section {
+    background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border: 1px solid #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+} 
