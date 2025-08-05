@@ -1,4 +1,4 @@
-# Core Streamlit App Packages
+# ✅ Core Streamlit App Packages (safe, compatible with Streamlit Cloud)
 streamlit==1.28.1
 pandas==2.2.2
 numpy==1.26.4
@@ -7,8 +7,7 @@ matplotlib==3.8.4
 plotly==5.21.0
 fpdf==1.7.2
 
-# Optional: Only if needed for local ML use (disable on Cloud)
-# scikit-learn==1.4.2; sys_platform != 'linux'
-
-# Ollama for local LLM (disable on Cloud)
-ollama==0.1.7; sys_platform != 'linux'
+# ✅ Ollama and scikit-learn: Disable on Streamlit Cloud (local only)
+# These are conditionally installed ONLY on non-Linux systems (i.e., your PC)
+scikit-learn==1.4.2; sys_platform != "linux"
+ollama==0.1.7; sys_platform != "linux"
