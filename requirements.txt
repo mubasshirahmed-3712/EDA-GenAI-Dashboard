@@ -1,11 +1,14 @@
+# Core Streamlit App Packages
 streamlit==1.28.1
-pandas>=2.2.2           # ✅ Compatible with numpy 1.26+
-numpy>=1.26.4           # ✅ Compatible with pandas >=2.2
-seaborn==0.13.0
-matplotlib==3.8.2
-plotly==5.17.0
+pandas==2.2.2
+numpy==1.26.4
+seaborn==0.13.2
+matplotlib==3.8.4
+plotly==5.21.0
 fpdf==1.7.2
-scikit-learn==1.3.2
 
-# ⚠️ Ollama is local-only — prevent install on Streamlit Cloud (Linux)
+# Optional: Only if needed for local ML use (disable on Cloud)
+# scikit-learn==1.4.2; sys_platform != 'linux'
+
+# Ollama for local LLM (disable on Cloud)
 ollama==0.1.7; sys_platform != 'linux'
