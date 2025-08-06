@@ -682,7 +682,7 @@ def main():
     with tab4:
         st.header("📄 Reports")
         
-        if st.session_state.cleaned_data is not None:
+        if st.session_state.get('cleaned_data') is not None:
             df_report = st.session_state.cleaned_data
         else:
             df_report = df
@@ -743,6 +743,7 @@ def main():
 
 if __name__ == "__main__":
     main() 
+
 
 
 
