@@ -467,7 +467,7 @@ def main():
             st.dataframe(missing_df, use_container_width=True)
         
         # Download cleaned data
-        if st.session_state.cleaned_data is not None:
+        if st.session_state.get('cleaned_data') is not None:
             csv = st.session_state.cleaned_data.to_csv(index=False)
             st.download_button(
                 label="📥 Download Cleaned Data (CSV)",
@@ -743,5 +743,6 @@ def main():
 
 if __name__ == "__main__":
     main() 
+
 
 
