@@ -479,7 +479,7 @@ def main():
     with tab2:
         st.header("📈 Visualizations")
         
-        if st.session_state.cleaned_data is not None:
+        if st.session_state.get('cleaned_data') is not None:
             df_viz = st.session_state.cleaned_data
         else:
             df_viz = df
@@ -743,6 +743,7 @@ def main():
 
 if __name__ == "__main__":
     main() 
+
 
 
 
