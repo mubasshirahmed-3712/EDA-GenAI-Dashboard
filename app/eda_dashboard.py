@@ -1,7 +1,12 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import seaborn as sns
+try:
+    import seaborn as sns
+    print("✅ Seaborn is installed")
+except ImportError as e:
+    print(f"❌ Seaborn not found: {e}")
+
 import matplotlib.pyplot as plt
 from fpdf import FPDF
 # import ollama  # For LLM Insights
@@ -738,3 +743,4 @@ def main():
 
 if __name__ == "__main__":
     main() 
+
