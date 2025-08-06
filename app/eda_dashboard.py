@@ -621,7 +621,7 @@ def main():
     with tab3:
         st.header("🤖 AI-Powered Insights")
         
-        if st.session_state.cleaned_data is not None:
+        if st.session_state.get('cleaned_data') is not None:
             df_insights = st.session_state.cleaned_data
         else:
             df_insights = df
@@ -743,6 +743,7 @@ def main():
 
 if __name__ == "__main__":
     main() 
+
 
 
 
