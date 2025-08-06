@@ -425,7 +425,7 @@ def main():
     with tab1:
         st.header("📊 Data Overview")
         
-        if st.session_state.cleaned_data is not None:
+        if st.session_state.get('cleaned_data') is not None:
             df_display = st.session_state.cleaned_data
         else:
             df_display = df
@@ -743,4 +743,5 @@ def main():
 
 if __name__ == "__main__":
     main() 
+
 
