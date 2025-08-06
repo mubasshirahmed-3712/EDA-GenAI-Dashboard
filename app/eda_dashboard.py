@@ -4,7 +4,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 from fpdf import FPDF
-import ollama  # For LLM Insights
+# import ollama  # For LLM Insights
 import json
 import io
 import base64
@@ -203,6 +203,7 @@ def generate_pdf_report(df, cleaned_df):
 def get_llm_insights(df):
     """Get insights from Ollama/Mistral using the ollama library"""
     try:
+        import ollama  # Safely import Ollama inside function
         # Prepare dataset summary
         summary = {
             "shape": df.shape,
