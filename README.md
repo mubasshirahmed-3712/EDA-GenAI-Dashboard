@@ -1,6 +1,6 @@
 # 🔥 EDA-GenAI Dashboard
 
-> **Professional, Real-World EDA Dashboard with AI-Powered Insights**
+> **Professional, Real-World EDA Dashboard with AI-Powered Insights**.
 
 A comprehensive, portfolio-grade Exploratory Data Analysis (EDA) dashboard built with Streamlit, featuring AI-powered insights using Ollama/Mistral, advanced visualizations, data cleaning capabilities, and professional PDF reporting.
 
